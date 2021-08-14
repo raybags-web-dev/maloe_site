@@ -143,10 +143,12 @@ html {
   width: 240px;
   height: 240px;
   overflow: hidden;
+  -o-object-fit: contain;
   object-fit: contain;
   padding: 0.5rem;
 }
 .img-container img {
+  -o-object-fit: cover;
   object-fit: cover;
   height: 100%;
   border: 10px solid hsl(0, 0%, 50%, 0.2);
@@ -585,6 +587,22 @@ html {
 .contact-form input:focus,
 .contact-form textarea:focus {
   border-color: var(--green);
+}
+.contact-form input::-webkit-input-placeholder,
+.contact-form textarea::-webkit-input-placeholder {
+  text-transform: uppercase;
+}
+.contact-form input::-moz-placeholder,
+.contact-form textarea::-moz-placeholder {
+  text-transform: uppercase;
+}
+.contact-form input:-ms-input-placeholder,
+.contact-form textarea:-ms-input-placeholder {
+  text-transform: uppercase;
+}
+.contact-form input::-ms-input-placeholder,
+.contact-form textarea::-ms-input-placeholder {
+  text-transform: uppercase;
 }
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
