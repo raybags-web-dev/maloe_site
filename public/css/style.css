@@ -148,9 +148,15 @@ html {
 }
 .img-container img {
   object-fit: cover;
-  border-radius: 50%;
-  border: 10px solid hsl(0, 0%, 50%, 0.5);
+  height: 100%;
+  border: 10px solid hsl(0, 0%, 50%, 0.2);
 }
+@media screen and (max-width: 991px) {
+  .home .row .row-right {
+    display: none;
+  }
+}
+
 .home .img-border {
   background: var(--nero);
   width: 245px;

@@ -3,31 +3,37 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="portifolio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="referrer" content="strict-origin" />
     <title>Maloe | Portifolio</title>
     <link
-    rel="icon"
-    type="image/png"
-    style="border-radius: 50px"
-    sizes="32x32"
-    href="./assets/maloe_logo.png"
-  />
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- utility css file -->
-    <link rel="stylesheet" href="css/utility.css" />
-    <!-- style css file -->
-    <link rel="stylesheet" href="css/style.css" />
+      rel="icon"
+      type="image/png"
+      style="border-radius: 50px"
+      sizes="32x32"
+      href="/public/assets/maloe_logo.png"
+    />
+    <!-- AOS animations -->
+    <link rel="stylesheet" href="https:/unpkg.com/aos@next/dist/aos.css" />
     <!-- fontawesome cdn -->
+
+    <!-- utility css file -->
+    <link rel="stylesheet" href="/public/css/utility.css" />
+    <!-- style css file -->
+    <link rel="stylesheet" href="/public/css/style.css" />
+
+    <!--load all styles -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
+
     <!-- google fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      href="https:/fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -36,7 +42,7 @@
     <nav class="navbar">
       <div class="container">
         <div class="brand-and-toggler">
-          <a href="#home" class="navbar-brand">M</a>
+          <a href="#home" data-aos="fade-right" class="navbar-brand">M</a>
           <button type="button" class="navbar-toggler" id="navbar-toggler">
             <span>
               <i class="fas fa-bars"></i>
@@ -46,28 +52,32 @@
 
         <div class="navbar-collapse">
           <ul class="navbar-nav">
-            <li class="nav-item nav-active">
+            <li
+              class="nav-item nav-active"
+              data-aos="fade-down"
+              data-aos-duration="3000"
+            >
               <a href="#home" class="nav-link">home</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" data-aos="fade-down" data-aos-duration="2800">
               <a href="#about" class="nav-link">about</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" data-aos="fade-down" data-aos-duration="2500">
               <a href="#resume" class="nav-link">resume</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" data-aos="fade-down" data-aos-duration="3000">
               <a href="#services" class="nav-link">services</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" data-aos="fade-down" data-aos-duration="2300">
               <a href="#skills" class="nav-link">skills</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" data-aos="fade-down" data-aos-duration="2000">
               <a href="#projects" class="nav-link">projects</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" data-aos="fade-down" data-aos-duration="1800">
               <a href="#blog" class="nav-link">blog</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" data-aos="fade-down" data-aos-duration="1500">
               <a href="#contact" class="nav-link">contact</a>
             </li>
           </ul>
@@ -80,42 +90,60 @@
     <section id="home" class="home container">
       <div class="row">
         <div class="row-left">
-          <h3>hello!</h3>
-          <h1>i'm <span>Maloe Klaassen</span></h1>
-          <h2>Reserch and Managament</h2>
+          <h3 data-aos="fade-down">hello!</h3>
+          <h1 data-aos="fade-right" data-aos-duration="3000">
+            i'm <span>Maloe Klaassen</span>
+          </h1>
+          <h2 data-aos="fade-in" data-aos-duration="3000">
+            Reserch and Managament
+          </h2>
           <div class="home-pg-btn">
-            <button type="button" class="btn">hire me</button>
-            <button type="button" class="btn">my work</button>
+            <button
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              type="button"
+              class="btn"
+            >
+              hire me
+            </button>
+            <button
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              type="button"
+              class="btn"
+            >
+              my work
+            </button>
           </div>
         </div>
 
-        <div class="row-right">
+        <div class="row-right" data-aos="fade-in" data-aos-duration="3000">
           <div class="img-border">
             <div class="img-container">
-              <img src="assets/maloe_1.jpg" alt="my photo" />
+              <img src="/public/assets/maloe_1.jpg" alt="my photo" />
             </div>
           </div>
         </div>
-      </div>
+      <row/div>
     </section>
     <!-- ===========ABOUT========== -->
 
     <!-- about page -->
     <section id="about" class="about container">
       <div class="title">
-        <h2>about</h2>
+        <h2 data-aos="fade-down" data-aos-duration="3000">about</h2>
         <div>
-          <h2>about me</h2>
+          <h2 data-aos="fade-up" data-aos-duration="3000">about me</h2>
         </div>
       </div>
 
       <div class="row">
-        <div class="row-left">
-          <img src="assets/maloe_1.jpg" alt="about photo" />
+        <div class="row-left" data-aos="fade-right" data-aos-duration="3000">
+          <img src="/public/assets/maloe_1.jpg" alt="about photo" />
         </div>
 
         <div class="row-right">
-          <p class="text">
+          <p class="text" data-aos="fade-in" data-aos-duration="3000">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
             praesentium numquam alias soluta incidunt? Similique assumenda,
             voluptatibus saepe quae iusto ratione dicta consectetur nesciunt
@@ -125,33 +153,51 @@
             <ul>
               <li class="text">
                 <span>Name: </span>
-                <span>Maloe Klaassen</span>
+                <span data-aos="fade-left" data-aos-duration="3000"
+                  >Maloe Klaassen</span
+                >
               </li>
               <li class="text">
                 <span>Date of Birth: </span>
-                <span>January 00, 1998</span>
+                <span data-aos="fade-left" data-aos-duration="3000"
+                  >January 00, 1998</span
+                >
               </li>
               <li class="text">
                 <span>Address: </span>
-                <span>Amsterdam Netherlands</span>
+                <span data-aos="fade-left" data-aos-duration="3000"
+                  >Amsterdam Netherlands</span
+                >
               </li>
               <li class="text">
                 <span>Email: </span>
-                <span>maloe.email@email.com</span>
+                <span data-aos="fade-left" data-aos-duration="3000"
+                  >maloe.email@email.com</span
+                >
               </li>
               <li class="text">
                 <span>Zip code: </span>
-                <span>123456</span>
+                <span data-aos="fade-left" data-aos-duration="3000"
+                  >123456</span
+                >
               </li>
               <li class="text">
                 <span>Phone: </span>
-                <span>+0000 000 0000</span>
+                <span data-aos="fade-left" data-aos-duration="3000"
+                  >+0000 000 0000</span
+                >
               </li>
             </ul>
           </div>
 
-          <h3>120 <span>Project count</span></h3>
-          <button type="button" class="btn">download cv</button>
+          <button
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            type="button"
+            class="btn"
+          >
+            download cv
+          </button>
         </div>
       </div>
     </section>
@@ -162,9 +208,9 @@
     <!-- resume page -->
     <section id="resume" class="resume container">
       <div class="title">
-        <h2>resume</h2>
+        <h2 data-aos="fade-down" data-aos-duration="3000">resume</h2>
         <div>
-          <h2>resume</h2>
+          <h2 data-aos="fade-up" data-aos-duration="3000">resume</h2>
         </div>
       </div>
 
@@ -175,7 +221,7 @@
       </p>
 
       <div class="row">
-        <div class="item">
+        <div class="item" data-aos="fade-up" data-aos-duration="2500">
           <div class="icon">
             <i class="fas fa-briefcase"></i>
           </div>
@@ -187,7 +233,7 @@
           </p>
         </div>
 
-        <div class="item">
+        <div class="item" data-aos="fade-up" data-aos-duration="2000">
           <div class="icon">
             <i class="fas fa-graduation-cap"></i>
           </div>
@@ -199,7 +245,7 @@
           </p>
         </div>
 
-        <div class="item">
+        <div class="item" data-aos="fade-up" data-aos-duration="2500">
           <div class="icon">
             <i class="fas fa-briefcase"></i>
           </div>
@@ -211,7 +257,7 @@
           </p>
         </div>
 
-        <div class="item">
+        <div class="item" data-aos="fade-up" data-aos-duration="2000">
           <div class="icon">
             <i class="fas fa-graduation-cap"></i>
           </div>
@@ -223,7 +269,7 @@
           </p>
         </div>
 
-        <div class="item">
+        <div class="item" data-aos="fade-up" data-aos-duration="2500">
           <div class="icon">
             <i class="fas fa-briefcase"></i>
           </div>
@@ -235,7 +281,7 @@
           </p>
         </div>
 
-        <div class="item">
+        <div class="item" data-aos="fade-up" data-aos-duration="2000">
           <div class="icon">
             <i class="fas fa-graduation-cap"></i>
           </div>
@@ -254,51 +300,58 @@
     <!-- services page -->
     <section id="services" class="services container">
       <div class="title">
-        <h2>services</h2>
+        <h2 data-aos="fade-down" data-aos-duration="2500">services</h2>
         <div>
-          <h2>services</h2>
+          <h2 data-aos="fade-up" data-aos-duration="2500">services</h2>
         </div>
       </div>
 
-      <p class="text">
+      <p class="text" data-aos="fade-in" data-aos-duration="2500">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatum
         cumque quaerat consequatur, laboriosam, nemo deleniti perferendis veniam
         amet labore nobis fugit voluptate sint omnis.
       </p>
 
       <div class="row">
-        <div class="item">
+        <div class="item" data-aos="fade-up" data-aos-duration="2000">
           <span><i class="fab fa-sketch"></i></span>
           <h2>lorem lorem</h2>
         </div>
 
-        <div class="item">
+        <div class="item" data-aos="fade-up" data-aos-duration="2000">
           <span><i class="fas fa-camera-retro"></i></span>
           <h2>photography</h2>
         </div>
 
-        <div class="item">
+        <div class="item" data-aos="fade-up" data-aos-duration="2000">
           <span><i class="fas fa-code"></i></span>
           <h2>lorem lorem</h2>
         </div>
 
-        <div class="item">
+        <div class="item" data-aos="fade-up" data-aos-duration="3000">
           <span><i class="fas fa-flask"></i></span>
           <h2>lorem</h2>
         </div>
 
-        <div class="item">
+        <div class="item" data-aos="fade-up" data-aos-duration="3000">
           <span><i class="fab fa-app-store"></i></span>
           <h2>lorem lorem</h2>
         </div>
 
-        <div class="item">
+        <div class="item" data-aos="fade-up" data-aos-duration="3000">
           <span><i class="fas fa-box-open"></i></span>
           <h2>lorem lorem</h2>
         </div>
       </div>
 
-      <button type="button" class="btn">view more</button>
+      <button
+        data-aos="fade-up"
+        data-aos-duration="2500"
+        type="button"
+        class="btn"
+      >
+        view more
+      </button>
     </section>
     <!-- end of services page -->
     <!-- ===============END OF SERVICES=================== -->
@@ -307,13 +360,13 @@
     <!-- skills page -->
     <section id="skills" class="skills container">
       <div class="title">
-        <h2>skills</h2>
+        <h2 data-aos="fade-down" data-aos-duration="2500">skills</h2>
         <div>
-          <h2>my skills</h2>
+          <h2 data-aos="fade-up" data-aos-duration="2500">my skills</h2>
         </div>
       </div>
 
-      <p class="text">
+      <p data-aos="fade-in" data-aos-duration="2500" class="text">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod ab
         laudantium possimus molestias sapiente, saepe facilis dolore autem
         repellat, quo iure tempore nisi perspiciatis. Quasi?
@@ -322,61 +375,97 @@
       <div class="row">
         <div class="item">
           <div class="item-text">
-            <span>lorem</span>
-            <span class="w-90">90%</span>
+            <span data-aos="fade-right" data-aos-duration="2500">lorem</span>
+            <span data-aos="fade-in" data-aos-duration="2500" class="w-90"
+              >90%</span
+            >
           </div>
           <div class="progress">
-            <div class="progress-bar w-90"></div>
+            <div
+              data-aos="fade-right"
+              data-aos-duration="2500"
+              class="progress-bar w-90"
+            ></div>
           </div>
         </div>
 
         <div class="item">
           <div class="item-text">
-            <span>lorem</span>
-            <span class="w-75">75%</span>
+            <span data-aos="fade-right" data-aos-duration="2500">lorem</span>
+            <span data-aos="fade-in" data-aos-duration="2500" class="w-75"
+              >75%</span
+            >
           </div>
           <div class="progress">
-            <div class="progress-bar w-75"></div>
+            <div
+              data-aos="fade-right"
+              data-aos-duration="2500"
+              class="progress-bar w-75"
+            ></div>
           </div>
         </div>
 
         <div class="item">
           <div class="item-text">
-            <span>lorem</span>
-            <span class="w-85">85%</span>
+            <span data-aos="fade-right" data-aos-duration="2500">lorem</span>
+            <span data-aos="fade-in" data-aos-duration="2500" class="w-85"
+              >85%</span
+            >
           </div>
           <div class="progress">
-            <div class="progress-bar w-85"></div>
+            <div
+              data-aos="fade-right"
+              data-aos-duration="2500"
+              class="progress-bar w-85"
+            ></div>
           </div>
         </div>
 
         <div class="item">
           <div class="item-text">
-            <span>lorem</span>
-            <span class="w-80">80%</span>
+            <span data-aos="fade-right" data-aos-duration="2500">lorem</span>
+            <span data-aos="fade-in" data-aos-duration="2500" class="w-80"
+              >80%</span
+            >
           </div>
           <div class="progress">
-            <div class="progress-bar w-80"></div>
+            <div
+              data-aos="fade-right"
+              data-aos-duration="2500"
+              class="progress-bar w-80"
+            ></div>
           </div>
         </div>
 
         <div class="item">
           <div class="item-text">
-            <span>lorem</span>
-            <span class="w-60">60%</span>
+            <span data-aos="fade-right" data-aos-duration="2500">lorem</span>
+            <span data-aos="fade-in" data-aos-duration="2500" class="w-60"
+              >60%</span
+            >
           </div>
           <div class="progress">
-            <div class="progress-bar w-60"></div>
+            <div
+              data-aos="fade-right"
+              data-aos-duration="2500"
+              class="progress-bar w-60"
+            ></div>
           </div>
         </div>
 
         <div class="item">
           <div class="item-text">
-            <span>lorem</span>
-            <span class="w-68">68%</span>
+            <span data-aos="fade-right" data-aos-duration="2500">lorem</span>
+            <span data-aos="fade-in" data-aos-duration="2500" class="w-68"
+              >68%</span
+            >
           </div>
           <div class="progress">
-            <div class="progress-bar w-68"></div>
+            <div
+              data-aos="fade-right"
+              data-aos-duration="2500"
+              class="progress-bar w-68"
+            ></div>
           </div>
         </div>
       </div>
@@ -387,13 +476,13 @@
     <!-- projects page -->
     <section id="projects" class="projects container">
       <div class="title">
-        <h2>projects</h2>
+        <h2 data-aos="fade-down" data-aos-duration="2500">projects</h2>
         <div>
-          <h2>My projects</h2>
+          <h2 data-aos="fade-up" data-aos-duration="2500">My projects</h2>
         </div>
       </div>
 
-      <p class="text">
+      <p class="text" data-aos="fade-in" data-aos-duration="2500">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
         perspiciatis accusantium eligendi aliquam excepturi dolores obcaecati
         eveniet inventore aut? Voluptas assumenda obcaecati dignissimos animi
@@ -401,42 +490,42 @@
       </p>
 
       <div class="row">
-        <div class="item">
+        <div class="item" data-aos="fade-in" data-aos-duration="2500">
           <div class="item-overlay">
             <a href="#">lorem lorem lorem</a>
             <h3>lorem lorem</h3>
           </div>
         </div>
 
-        <div class="item">
+        <div class="item" data-aos="fade-in" data-aos-duration="2500">
           <div class="item-overlay">
             <a href="#">lorem lorem lorem</a>
             <h3>lorem lorem</h3>
           </div>
         </div>
 
-        <div class="item">
+        <div class="item" data-aos="fade-in" data-aos-duration="2500">
           <div class="item-overlay">
             <a href="#">lorem lorem lorem</a>
             <h3>lorem lorem</h3>
           </div>
         </div>
 
-        <div class="item">
+        <div class="item" data-aos="fade-in" data-aos-duration="2500">
           <div class="item-overlay">
             <a href="#">lorem lorem lorem</a>
             <h3>lorem lorem</h3>
           </div>
         </div>
 
-        <div class="item">
+        <div class="item" data-aos="fade-in" data-aos-duration="2500">
           <div class="item-overlay">
             <a href="#">lorem lorem lorem</a>
             <h3>lorem lorem</h3>
           </div>
         </div>
 
-        <div class="item">
+        <div class="item" data-aos="fade-in" data-aos-duration="2500">
           <div class="item-overlay">
             <a href="#">lorem lorem lorem</a>
             <h3>lorem lorem</h3>
@@ -450,22 +539,22 @@
     <!-- blog page -->
     <section id="blog" class="blog container">
       <div class="title">
-        <h2>posts</h2>
+        <h2 data-aos="fade-down" data-aos-duration="2500">my blogs</h2>
         <div>
-          <h2>my blog</h2>
+          <h2 data-aos="fade-up" data-aos-duration="2500">my blog</h2>
         </div>
       </div>
 
-      <p class="text">
+      <p class="text" data-aos="fade-in" data-aos-duration="2500">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus
         architecto fugit veniam ad consectetur, perferendis, voluptatum, commodi
         cum facere accusantium error alias ex exercitationem. Explicabo?
       </p>
 
       <div class="row">
-        <div class="item">
+        <div class="item" data-aos="fade-in" data-aos-duration="2500">
           <div class="item-img">
-            <img src="assets/blog-img-1.jpg" alt="blog image" />
+            <img src="/public/assets/blog-img-1.jpg" alt="blog image" />
           </div>
           <div class="item-content">
             <span
@@ -481,13 +570,20 @@
               aperiam fugiat vel, similique necessitatibus tenetur saepe commodi
               repudiandae perferendis error eligendi omnis iste?
             </p>
-            <button type="button" class="btn">read more</button>
+            <button
+              data-aos="fade-right"
+              data-aos-duration="2500"
+              type="button"
+              class="btn"
+            >
+              read more
+            </button>
           </div>
         </div>
 
-        <div class="item">
+        <div class="item" data-aos="fade-in" data-aos-duration="2500">
           <div class="item-img">
-            <img src="assets/blog-img-2.jpg" alt="blog image" />
+            <img src="/public/assets/blog-img-2.jpg" alt="blog image" />
           </div>
           <div class="item-content">
             <span
@@ -503,13 +599,20 @@
               aperiam fugiat vel, similique necessitatibus tenetur saepe commodi
               repudiandae perferendis error eligendi omnis iste?
             </p>
-            <button type="button" class="btn">read more</button>
+            <button
+              data-aos="fade-right"
+              data-aos-duration="2500"
+              type="button"
+              class="btn"
+            >
+              read more
+            </button>
           </div>
         </div>
 
-        <div class="item">
+        <div class="item" data-aos="fade-in" data-aos-duration="2500">
           <div class="item-img">
-            <img src="assets/blog-img-3.jpg" alt="blog image" />
+            <img src="/public/assets/blog-img-3.jpg" alt="blog image" />
           </div>
           <div class="item-content">
             <span
@@ -525,13 +628,20 @@
               aperiam fugiat vel, similique necessitatibus tenetur saepe commodi
               repudiandae perferendis error eligendi omnis iste?
             </p>
-            <button type="button" class="btn">read more</button>
+            <button
+              data-aos="fade-right"
+              data-aos-duration="2500"
+              type="button"
+              class="btn"
+            >
+              read more
+            </button>
           </div>
         </div>
 
-        <div class="item">
+        <div class="item" data-aos="fade-in" data-aos-duration="2500">
           <div class="item-img">
-            <img src="assets/blog-img-4.jpg" alt="blog image" />
+            <img src="/public/assets/blog-img-4.jpg" alt="blog image" />
           </div>
           <div class="item-content">
             <span
@@ -547,16 +657,23 @@
               aperiam fugiat vel, similique necessitatibus tenetur saepe commodi
               repudiandae perferendis error eligendi omnis iste?
             </p>
-            <button type="button" class="btn">read more</button>
+            <button
+              data-aos="fade-right"
+              data-aos-duration="2500"
+              type="button"
+              class="btn"
+            >
+              read more
+            </button>
           </div>
         </div>
 
-        <div class="item">
+        <div class="item" data-aos="fade-in" data-aos-duration="2500">
           <div class="item-img">
-            <img src="assets/blog-img-5.jpg" alt="blog image" />
+            <img src="/public/assets/blog-img-5.jpg" alt="blog image" />
           </div>
           <div class="item-content">
-            <span
+            <span data-aos="fade-up" data-aos-duration="2000"
               >june 22, 2022 &nbsp; admin <i class="fas fa-comment-alt"></i> 3
             </span>
             <h2>
@@ -569,13 +686,20 @@
               aperiam fugiat vel, similique necessitatibus tenetur saepe commodi
               repudiandae perferendis error eligendi omnis iste?
             </p>
-            <button type="button" class="btn">read more</button>
+            <button
+              data-aos="fade-right"
+              data-aos-duration="2500"
+              type="button"
+              class="btn"
+            >
+              read more
+            </button>
           </div>
         </div>
 
-        <div class="item">
+        <div class="item" data-aos="fade-in" data-aos-duration="2500">
           <div class="item-img">
-            <img src="assets/blog-img-6.jpg" alt="blog image" />
+            <img src="/public/assets/blog-img-6.jpg" alt="blog image" />
           </div>
           <div class="item-content">
             <span
@@ -591,16 +715,47 @@
               aperiam fugiat vel, similique necessitatibus tenetur saepe commodi
               repudiandae perferendis error eligendi omnis iste?
             </p>
-            <button type="button" class="btn">read more</button>
+            <button
+              data-aos="fade-right"
+              data-aos-duration="2500"
+              type="button"
+              class="btn"
+            >
+              read more
+            </button>
           </div>
         </div>
       </div>
 
       <div class="pagination">
-        <a href="#" class="page-link">1</a>
-        <a href="#" class="page-link">2</a>
-        <a href="#" class="page-link">3</a>
-        <a href="#" class="page-link">4</a>
+        <a
+          data-aos="fade-in"
+          data-aos-duration="2500"
+          href="#blog"
+          class="page-link"
+          >1</a
+        >
+        <a
+          data-aos="fade-in"
+          data-aos-duration="2500"
+          href="#blog"
+          class="page-link"
+          >2</a
+        >
+        <a
+          data-aos="fade-in"
+          data-aos-duration="2500"
+          href="#blog"
+          class="page-link"
+          >3</a
+        >
+        <a
+          data-aos="fade-in"
+          data-aos-duration="2500"
+          href="#blog"
+          class="page-link"
+          >4</a
+        >
       </div>
     </section>
     <!-- ==============END OF BLOG=========== -->
@@ -609,13 +764,13 @@
     <!-- contact page -->
     <section id="contact" class="contact container">
       <div class="title">
-        <h2>contact</h2>
+        <h2 data-aos="fade-down" data-aos-duration="2500">contact</h2>
         <div>
-          <h2>get in touch</h2>
+          <h2 data-aos="fade-up" data-aos-duration="2500">get in touch</h2>
         </div>
       </div>
 
-      <p class="text">
+      <p class="text" data-aos="fade-in" data-aos-duration="2500">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam
         tempore, et dolores eum voluptas iusto voluptate, dicta iure mollitia
         atque, exercitationem deserunt laborum libero natus!
@@ -623,22 +778,22 @@
 
       <div class="row">
         <div class="col-left">
-          <h2>feel free to ask us!</h2>
-          <p class="text">
+          <h2 data-aos="fade-in" data-aos-duration="2500">feel free to ask.</h2>
+          <p class="text" data-aos="fade-in" data-aos-duration="2500">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui soluta
             mollitia suscipit maxime sunt dolore deleniti quam nihil repellendus
             perferendis.
           </p>
 
-          <div class="contact-info">
+          <div class="contact-info" data-aos="fade-in" data-aos-duration="2500">
             <span><i class="fas fa-envelope-open"></i></span>
             <h3>
-              <span class="text">mail me</span> <br />
+              <span class="text">email me</span> <br />
               maloe.email@gmail.com
             </h3>
           </div>
 
-          <div class="contact-info">
+          <div class="contact-info" data-aos="fade-in" data-aos-duration="2500">
             <span><i class="fas fa-phone-square-alt"></i></span>
             <h3>
               <span class="text">call me</span> <br />
@@ -647,22 +802,22 @@
           </div>
 
           <div class="contact-social-links">
-            <a href="#">
+            <a href="#" data-aos="fade-up" data-aos-duration="2500">
               <i class="fab fa-facebook-f"></i>
             </a>
-            <a href="#">
+            <a href="#" data-aos="fade-up" data-aos-duration="2500">
               <i class="fab fa-twitter"></i>
             </a>
-            <a href="#">
+            <a href="#" data-aos="fade-up" data-aos-duration="2500">
               <i class="fab fa-youtube"></i>
             </a>
-            <a href="#">
+            <a href="#" data-aos="fade-up" data-aos-duration="2500">
               <i class="fab fa-github"></i>
             </a>
           </div>
         </div>
 
-        <div class="col-right">
+        <div class="col-right" data-aos="fade-up" data-aos-duration="2500">
           <form class="contact-form">
             <div class="form-group">
               <input type="text" placeholder="your name" />
@@ -728,7 +883,7 @@
             </a>
             <a href="#" class="text">
               <i class="fas fa-long-arrow-alt-right"></i>
-             lorem lorem
+              lorem lorem
             </a>
             <a href="#" class="text">
               <i class="fas fa-long-arrow-alt-right"></i>
@@ -747,9 +902,7 @@
             <span>
               <i class="fas fa-map-marker-alt"></i>
             </span>
-            <span class="text"
-              >110 zijna Straat Amsterdam Nederland</span
-            >
+            <span class="text">110 zijna Straat Amsterdam Nederland</span>
           </div>
 
           <div>
@@ -775,7 +928,25 @@
       </div>
     </footer>
     <!-- end of footer -->
+
     <!-- custom js file -->
-    <script src="js/script.js"></script>
+    <!-- ===jquery=== -->
+    <script
+      src="https:/cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- ===jquery ===-->
+    <!-- AOS animations -->
+    <script
+      src="https:/cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- AOS animations -->
+    <script src="/public/js/script.js"></script>
   </body>
 </html>
