@@ -3,8 +3,6 @@ const navBtn = document.querySelector("#navbar-toggler");
 const navDiv = document.querySelector(".navbar-collapse");
 const navLinks = Array.from(document.querySelectorAll(".navbar-nav .nav-link"));
 
-// aos animation initialization
-AOS.init();
 // show navbtn handler
 navBtn.addEventListener("click", () => {
   navDiv.classList.add("showNav");
